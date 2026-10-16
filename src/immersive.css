@@ -1,0 +1,86 @@
+/* The stage exactly matches the viewport; only decorative scenery is cropped. */
+body,#viewport{background:#352047}
+#viewport{position:fixed;inset:0}
+.scene>.background{object-position:center;object-fit:cover}
+.scene-mission.mission-2:after{background:none}
+.scene-mission.mission-2 header{position:absolute;inset:0 0 auto;height:115px;padding:0 55px}
+.scene-mission.mission-2 .brand{background:#54307cdd;border:2px solid #edc471;color:#fff2c8;box-shadow:0 4px 0 #392052;padding:10px 18px}
+.scene-mission.mission-2 .brand-mark{color:#f6d37e}
+.scene-mission.mission-2 .counter,.scene-mission.mission-2 .icon-button{background:#54307ce8;color:#fff2c8;border:2px solid #edc471;box-shadow:0 4px 0 #392052}
+.scene-mission.mission-2 .mission{position:absolute;inset:0;height:100%;padding:0}
+.scene-mission.mission-2 .mission-heading{position:absolute;top:135px;left:55px;right:55px;padding:0;display:flex;align-items:flex-start}
+.scene-mission.mission-2 .mission-heading>div:first-child{background:none;border:0;box-shadow:none;padding:0}
+.scene-mission.mission-2 .mission-heading h1{font-size:52px;color:#fff2c3;text-shadow:0 3px 0 #4e296c,0 0 12px #38194e,2px 2px 4px #38194e}
+.scene-mission.mission-2 .mission-heading .eyebrow,.scene-mission.mission-2 .eyebrow span{color:#fff1c7;text-shadow:0 2px 4px #321b45}
+.scene-mission.mission-2 .round-dots{gap:10px;padding-top:8px}
+.scene-mission.mission-2 .round-dots span{background:#53307cde;color:#fff0c3;border-color:#e6ba65;width:40px;height:40px}
+.scene-mission.mission-2 .round-dots .done{background:#4f8763}.scene-mission.mission-2 .round-dots .active{background:#b98239}
+.scene-mission.mission-2 .task-bubble{position:absolute;top:250px;left:55px;width:555px;height:100px;padding:12px 16px;gap:10px;border:2px solid #e9c382;border-radius:22px;background:#fff4dbea;box-shadow:0 5px 0 #5e3d6940}
+.scene-mission.mission-2 .task-boo{width:80px;height:80px}
+.scene-mission.mission-2 .task-bubble p{font-size:22px;line-height:1.3}
+.scene-mission.mission-2 .task-bubble .listen{font-size:15px;padding:13px}
+.scene-mission.mission-2 .play-area{position:absolute;inset:0;margin:0;width:100%;height:100%;min-height:0;pointer-events:none}
+.scene-mission.mission-2 .play-area button{pointer-events:auto}
+.scene-mission.mission-2 .train-game{display:block;position:relative;height:100%;width:100%}
+.scene-mission.mission-2 .word-picture{position:absolute;left:55px;top:380px;width:190px;height:180px;padding:10px;flex-direction:column;gap:0;background:#fff4dbde;border:2px solid #edc785;border-radius:26px}
+.scene-mission.mission-2 .word-picture .art{width:135px;height:130px}
+.scene-mission.mission-2 .word-picture span{font-size:17px}
+.scene-mission.mission-2 .train-row{position:absolute;top:52%;left:4%;width:92%;height:190px;align-items:flex-end}
+.scene-mission.mission-2 .train-row:after{height:4px;background:#70452a;box-shadow:0 3px 0 #e5b468;width:92%;bottom:4px}
+.scene-mission.mission-2 .engine{height:195px;width:190px}
+.scene-mission.mission-2 .wagon{width:150px;height:155px}
+.scene-mission.mission-2 .letters{position:absolute;bottom:210px;left:4%;width:92%;gap:16px}
+.scene-mission.mission-2 .letter-wagon{width:140px;height:110px;background:#fff0d65c;border:1px solid #ffe8b478;box-shadow:0 4px 0 #52315e77}
+.scene-mission.mission-2 .letter-wagon:disabled{opacity:.14}
+.scene-mission.mission-2 .spelling-actions{justify-content:center;position:absolute;bottom:116px;left:0;width:100%;margin:0;gap:20px}
+.scene-mission.mission-2 .primary,.scene-mission.mission-2 .secondary{background:linear-gradient(#8755bb,#55327c);border:2px solid #edc471;color:#fff2c8;box-shadow:0 4px 0 #392052}
+.scene-mission.mission-2 .spelling-actions button{font-size:18px;padding:18px 26px}
+.scene-mission.mission-2 .feedback{position:absolute;bottom:76px;left:20%;width:60%;height:32px;min-height:0;background:none;border:0;box-shadow:none;padding:0;color:#fff8dd;text-shadow:0 2px 4px #251030,0 0 8px #251030;font-size:20px}
+.scene-mission.mission-2 .mission-footer{bottom:20px;left:55px;right:55px;gap:18px}
+.scene-mission.mission-2 .mission-footer button{padding:13px 22px;font-size:16px}
+.scene-mission.mission-2 .mission-footer>span{background:#54307ce8;border:2px solid #edc471;color:#fff2c8;padding:12px 18px;font-size:16px}
+/* Tall screens reserve the centre for the illustration and the lower half for play. */
+@media(max-aspect-ratio:14/10) and (min-aspect-ratio:9/10){
+ .scene-mission.mission-2 .train-row{top:58%}
+ .scene-mission.mission-2 .letters{bottom:260px}
+ .scene-mission.mission-2 .spelling-actions{bottom:150px}
+ .scene-mission.mission-2 .feedback{bottom:98px}
+}
+.portrait .scene-mission.mission-2 header{height:115px;padding:0 28px}
+.portrait .scene-mission.mission-2 .brand{padding:7px 10px}
+.portrait .scene-mission.mission-2 .mission-heading{top:135px;left:32px;right:32px;padding:0;display:block}
+.portrait .scene-mission.mission-2 .mission-heading h1{font-size:39px}
+.portrait .scene-mission.mission-2 .mission-heading .eyebrow{font-size:14px}
+.portrait .scene-mission.mission-2 .round-dots{position:static;justify-content:flex-start;margin:12px 0 0;padding:0}
+.portrait .scene-mission.mission-2 .round-dots span{width:32px;height:32px;font-size:16px}
+.portrait .scene-mission.mission-2 .task-bubble{top:265px;left:32px;width:545px;height:108px;padding:10px;gap:8px}
+.portrait .scene-mission.mission-2 .task-bubble p{padding:0 90px 0 0;font-size:21px}
+.portrait .scene-mission.mission-2 .task-bubble .listen{position:absolute;right:10px;bottom:31px;font-size:14px;padding:12px}
+.portrait .scene-mission.mission-2 .word-picture{left:32px;top:405px;width:170px;height:165px;padding:6px}
+.portrait .scene-mission.mission-2 .word-picture .art{width:130px;height:120px}
+.portrait .scene-mission.mission-2 .word-picture span{font-size:16px}
+.portrait .scene-mission.mission-2 .train-row{top:56%;left:2%;width:96%;height:150px}
+.portrait .scene-mission.mission-2 .engine{width:80px;height:140px}
+.portrait .scene-mission.mission-2 .wagon{width:81px;height:115px}
+.portrait .scene-mission.mission-2 .letters{bottom:280px;left:2%;width:96%;gap:10px}
+.portrait .scene-mission.mission-2 .letter-wagon{width:89px;height:94px}
+.portrait .scene-mission.mission-2 .spelling-actions{bottom:170px}
+.portrait .scene-mission.mission-2 .spelling-actions button{font-size:19px;padding:20px 28px}
+.portrait .scene-mission.mission-2 .feedback{bottom:100px;left:5%;width:90%;height:48px;font-size:21px}
+.portrait .scene-mission.mission-2 .mission-footer{left:32px;right:32px;bottom:25px;gap:14px}
+.portrait .scene-mission.mission-2 .mission-footer button{font-size:16px;padding:17px 14px}
+.portrait .scene-mission.mission-2 .mission-footer>span{font-size:15px;padding:15px 10px}
+@media(max-aspect-ratio:9/10) and (min-aspect-ratio:65/100){
+ .portrait .scene-mission.mission-2 .mission-heading{top:120px}
+ .portrait .scene-mission.mission-2 .round-dots{position:absolute;right:0;top:0;margin:0;gap:6px}
+ .portrait .scene-mission.mission-2 .round-dots span{width:25px;height:25px;font-size:13px}
+ .portrait .scene-mission.mission-2 .task-bubble{top:230px;height:90px}
+ .portrait .scene-mission.mission-2 .task-bubble .listen{bottom:21px}
+ .portrait .scene-mission.mission-2 .word-picture{top:345px;width:145px;height:140px}
+ .portrait .scene-mission.mission-2 .word-picture .art{width:110px;height:100px}
+ .portrait .scene-mission.mission-2 .train-row{top:49%;height:130px}
+ .portrait .scene-mission.mission-2 .letters{bottom:230px}
+ .portrait .scene-mission.mission-2 .spelling-actions{bottom:135px}
+ .portrait .scene-mission.mission-2 .feedback{bottom:82px;font-size:19px;height:36px}
+ .portrait .scene-mission.mission-2 .mission-footer{bottom:16px}
+}
