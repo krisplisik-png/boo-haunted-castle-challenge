@@ -32,3 +32,30 @@ html,body,#viewport{overflow:clip}
 .portrait .reward .reward-image{height:calc(100% - 330px);width:auto;max-width:95%;aspect-ratio:1086 / 1448}
 .portrait .reward .russian{font-size:21px;margin-top:20px}.portrait .reward .actions{margin-top:15px}
 @media(prefers-reduced-motion:reduce){.chest-lid{transform:translateY(-15%) rotate(-9deg)}.chest-magic-glow{opacity:1}}
+
+/* Halloween interface kit: supplied ornamental plates skin the shared UI;
+   labels and changing values remain live HTML. */
+.mission-heading>div:first-child{background:url('./assets/kit/kit-title.png') center/100% 100% no-repeat;border:0;border-radius:0;box-shadow:none;min-width:540px;min-height:150px;padding:34px 48px 24px}
+.mission-heading h1{color:#fff2ca;text-shadow:0 3px 0 #4a1f62,0 0 7px #2d123f;font-size:43px}
+.mission-heading .eyebrow{color:#ffe7a0;text-shadow:0 2px 0 #4a1f62;margin-bottom:8px}
+.task-bubble{background:url('./assets/kit/kit-parchment-1.png') center/100% 100% no-repeat;border:0;border-radius:0;box-shadow:none;min-height:145px}
+.task-bubble .listen{background:url('./assets/kit/kit-listen.png') center/100% 100% no-repeat;border:0;border-radius:0;color:#fff5c9;text-shadow:0 2px 0 #4b1e64;min-width:170px;min-height:76px;padding:22px 28px}
+.feedback{background:url('./assets/kit/kit-parchment-2.png') center/100% 100% no-repeat;border:0;border-radius:0;box-shadow:none;color:#4b285e;height:55px;min-height:55px;padding:8px 42px}
+.mission-footer .secondary[data-action="home"]{background:url('./assets/kit/kit-back.png') center/100% 100% no-repeat;border:0;border-radius:0;min-width:220px;min-height:82px;padding:22px 38px;color:#fff5c9;text-shadow:0 2px 0 #4b1e64}
+.mission-footer .secondary[data-action="hint"]{background:url('./assets/kit/kit-hint.png') center/100% 100% no-repeat;border:0;border-radius:0;min-width:190px;min-height:76px;padding:20px 34px;color:#fff5c9;text-shadow:0 2px 0 #4b1e64}
+.primary,.spelling-actions .secondary{background:url('./assets/kit/kit-listen.png') center/100% 100% no-repeat;border:0;border-radius:0;color:#fff5c9;text-shadow:0 2px 0 #4b1e64;min-height:76px;padding:22px 35px}
+.mission-footer>span{background:url('./assets/kit/kit-coins.png') center/100% 100% no-repeat;border:0;border-radius:0;color:#fff5c9;text-shadow:0 2px 0 #4b1e64;padding:22px 45px}
+.round-dots span{background:url('./assets/kit/kit-medallion-1.png') center/100% 100% no-repeat;border:0;border-radius:0;color:#fff5c9;text-shadow:0 2px 0 #4b1e64;width:60px;height:64px}
+.round-dots .done{background:url('./assets/kit/kit-check.png') center/100% 100% no-repeat}
+.round-dots .active{background:url('./assets/kit/kit-star.png') center/100% 100% no-repeat;color:#fff5c9}
+.complete h1{background:url('./assets/kit/kit-completed.png') center/100% 100% no-repeat;color:#fff2ca;text-shadow:0 3px 0 #4a1f62;padding:50px 120px 65px;font-size:46px}
+.complete:before,.chest-scene:before{background:transparent;border:0}
+.complete .primary,.complete .secondary,.chest-scene .primary,.reward .primary,.reward .secondary{min-width:220px}
+.portrait .mission-heading>div:first-child{min-width:0;width:100%;min-height:120px;padding:27px 34px 20px}
+.portrait .mission-heading h1{font-size:34px}
+.portrait .task-bubble{min-height:135px}
+.portrait .round-dots span{width:44px;height:48px}
+.scene-mission.mission-2 .feedback{bottom:145px}
+.portrait .scene-mission.mission-2 .feedback{bottom:130px}
+.scene-mission .feedback{position:absolute;left:10%;right:10%;bottom:145px;width:auto;pointer-events:none}
+.portrait .scene-mission .feedback{bottom:130px;left:4%;right:4%;width:auto}
