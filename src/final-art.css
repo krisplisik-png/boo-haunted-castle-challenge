@@ -1,6 +1,6 @@
 /* Original menu is displayed intact; real HTML buttons follow the painted cards. */
 html,body,#viewport{overflow:clip}
-.menu-counter-zero{background:transparent;color:transparent}
+.menu-counter.menu-counter-zero{background:transparent;color:transparent}
 .home-art-screen{position:absolute;inset:0;display:grid;place-items:center}
 .scene-home>.background{filter:blur(18px) brightness(.65);transform:scale(1.04)}
 .scene-home:after{display:none}
