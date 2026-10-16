@@ -75,3 +75,10 @@ html,body,#viewport{overflow:clip}
 .portrait .task-bubble .task-boo{width:82px;height:82px}
 .portrait .task-bubble p{font-size:21px}
 .portrait .feedback{width:92%}
+.scene-mission.mission-2 .feedback{bottom:220px}
+.portrait .scene-mission.mission-2 .feedback{bottom:165px}
+.mission-footer .secondary[data-action="home"],.mission-footer .secondary[data-action="hint"],.task-bubble .listen{color:transparent;text-shadow:none}
+.round-dots span{background:linear-gradient(180deg,#7d3e9d,#4d1c70);border:2px solid #e9b75b;border-radius:50%;color:#fff4b9;text-shadow:0 2px 0 #351442}
+.round-dots .done{background:linear-gradient(180deg,#67a86f,#347044);color:#fff4b9}
+.round-dots .active{background:linear-gradient(180deg,#a85eae,#63307f);color:#fff4b9}
+.mission-footer>span{background:linear-gradient(180deg,#7d3e9d,#4d1c70);color:#fff4b9}
