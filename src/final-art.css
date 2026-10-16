@@ -59,3 +59,19 @@ html,body,#viewport{overflow:clip}
 .portrait .scene-mission.mission-2 .feedback{bottom:130px}
 .scene-mission .feedback{position:absolute;left:10%;right:10%;bottom:145px;width:auto;pointer-events:none}
 .portrait .scene-mission .feedback{bottom:130px;left:4%;right:4%;width:auto}
+
+/* Keep the task and status strips compact. The supplied sheet has a complete
+   character illustration in its parchment crop, so it is used for the
+   decorative buttons while these live text panels use a clean game surface. */
+.task-bubble{width:min(1120px,calc(100% - 220px));height:104px;min-height:104px;margin:0 auto;background:linear-gradient(180deg,#ffe7bd,#f1c982);border:3px solid #9a5a30;border-radius:18px;box-shadow:inset 0 0 0 3px #fff0bd,0 6px 0 #4a244355;padding:10px 22px;gap:16px}
+.task-bubble .task-boo{width:86px;height:86px;flex:none}
+.task-bubble p{color:#553047;font-size:24px;line-height:1.2;text-shadow:none}
+.task-bubble .listen{font-size:0;min-width:150px;min-height:58px;padding:0}
+.feedback{width:min(980px,78%);margin:0 auto;background:linear-gradient(180deg,#f8dcae,#e7b96f);border:2px solid #8d512d;border-radius:14px;color:#53304b;box-shadow:inset 0 0 0 2px #ffe7ae,0 4px 0 #4a244333;padding:8px 24px}
+.mission-footer .secondary[data-action="home"],.mission-footer .secondary[data-action="hint"]{font-size:0}
+.primary,.spelling-actions .secondary{background:linear-gradient(180deg,#7f42a7,#4d1e70);border:2px solid #efbd54;border-radius:14px;box-shadow:0 4px 0 #341342;color:#fff5c9;text-shadow:0 2px 0 #351442}
+.mission-footer>span{background:linear-gradient(180deg,#652d83,#3f185e);border:2px solid #e4ad52;border-radius:14px;padding:14px 22px}
+.portrait .task-bubble{width:calc(100% - 48px);height:135px;min-height:135px}
+.portrait .task-bubble .task-boo{width:82px;height:82px}
+.portrait .task-bubble p{font-size:21px}
+.portrait .feedback{width:92%}
