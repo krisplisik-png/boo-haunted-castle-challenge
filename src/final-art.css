@@ -48,7 +48,7 @@ html,body,#viewport{overflow:clip}
 .round-dots span{background:url('../public/assets/kit/kit-medallion-1.png') center/100% 100% no-repeat;border:0;border-radius:0;color:#fff5c9;text-shadow:0 2px 0 #4b1e64;width:60px;height:64px}
 .round-dots .done{background:url('../public/assets/kit/kit-check.png') center/100% 100% no-repeat}
 .round-dots .active{background:url('../public/assets/kit/kit-star.png') center/100% 100% no-repeat;color:#fff5c9}
-.complete h1{background:url('../public/assets/kit/kit-completed.png') center/100% 100% no-repeat;color:#fff2ca;text-shadow:0 3px 0 #4a1f62;padding:50px 120px 65px;font-size:46px}
+.complete h1{background:url('../public/assets/kit/kit-completed.png') center/100% 100% no-repeat;color:transparent;text-shadow:none;padding:50px 120px 65px;font-size:0}
 .complete:before,.chest-scene:before{background:transparent;border:0}
 .complete .primary,.complete .secondary,.chest-scene .primary,.reward .primary,.reward .secondary{min-width:220px}
 .portrait .mission-heading>div:first-child{min-width:0;width:100%;min-height:120px;padding:27px 34px 20px}
